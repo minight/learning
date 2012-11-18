@@ -11,7 +11,7 @@
 using namespace std;
 
 int main(){
-    int choice = 0, i, total, j = 0 ;
+    int choice = 0, i = 0 , total, j = 0 ;
     double avg = 0;
     
     cout << "enter a number between 1 and 1776";

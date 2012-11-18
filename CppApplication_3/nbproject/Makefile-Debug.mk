@@ -14,11 +14,11 @@ GREP=grep
 NM=nm
 CCADMIN=CCadmin
 RANLIB=ranlib
-CC=gcc
-CCC=g++
-CXX=g++
-FC=gfortran
-AS=as
+CC=gcc.exe
+CCC=g++.exe
+CXX=g++.exe
+FC=gfortran.exe
+AS=as.exe
 
 # Macros
 CND_PLATFORM=Cygwin_4.x-Windows
@@ -34,7 +34,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/main.o
+	${OBJECTDIR}/ForLoopsTotalAndAverage2.o
 
 
 # C Compiler Flags
@@ -61,10 +61,10 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/cppapplication_3.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/cppapplication_3 ${OBJECTFILES} ${LDLIBSOPTIONS} 
 
-${OBJECTDIR}/main.o: main.cpp 
+${OBJECTDIR}/ForLoopsTotalAndAverage2.o: ForLoopsTotalAndAverage2.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/main.o main.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/ForLoopsTotalAndAverage2.o ForLoopsTotalAndAverage2.cpp
 
 # Subprojects
 .build-subprojects:
