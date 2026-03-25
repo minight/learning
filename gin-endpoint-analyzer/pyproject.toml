@@ -1,0 +1,20 @@
+[project]
+name = "gin-endpoint-analyzer"
+version = "0.1.0"
+description = "LangGraph-powered security analyzer for Go/Gin HTTP endpoints"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "langgraph>=0.4",
+    "langchain-anthropic>=0.3",
+    "langchain-core>=0.3",
+    "click>=8.0",
+    "rich>=13.0",
+]
+
+[project.scripts]
+gin-analyzer = "gin_endpoint_analyzer.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
